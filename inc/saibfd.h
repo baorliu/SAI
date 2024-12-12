@@ -173,7 +173,7 @@ typedef enum _sai_bfd_session_attr_t
      *
      * @type sai_object_id_t
      * @flags MANDATORY_ON_CREATE | CREATE_AND_SET
-     * @objects SAI_OBJECT_TYPE_PORT
+     * @objects SAI_OBJECT_TYPE_PORT, SAI_OBJECT_TYPE_LAG
      * @condition SAI_BFD_SESSION_ATTR_HW_LOOKUP_VALID == false
      */
     SAI_BFD_SESSION_ATTR_PORT,
