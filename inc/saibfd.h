@@ -524,7 +524,7 @@ typedef enum _sai_bfd_session_attr_t
     SAI_BFD_SESSION_ATTR_SELECTIVE_COUNTER_LIST,
 
     /**
-     * @brief use next hop
+     * @brief Use next hop
      *
      * @type bool
      * @flags CREATE_ONLY
