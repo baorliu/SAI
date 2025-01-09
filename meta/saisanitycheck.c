@@ -3133,11 +3133,11 @@ void check_attr_condition_met(
              * SAI_PORT_ATTR_MEDIA_TYPE.
              */
 
-            attrs[idx].id ^= (uint32_t)(-1);
+            attrs[idx].value.s32 ^= (int32_t)(-1);
 
             META_ASSERT_FALSE(sai_metadata_is_condition_met(md, count, attrs), "condition should be met");
 
-            attrs[idx].id ^= (uint32_t)(-1);
+            attrs[idx].value.s32 ^= (int32_t)(-1);
         }
     }
     else if (md->conditiontype == SAI_ATTR_CONDITION_TYPE_MIXED)
